@@ -34,5 +34,16 @@ module.exports = {
         })
       }
     }
-  }
+  },
+
+  modules: [
+    // nuxt-buefy setting
+    'nuxt-buefy',
+
+    // Options
+    ['nuxt-buefy', {
+      css: true,
+      materialDesignIcons: true
+    }],
+  ]
 }
