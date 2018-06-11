@@ -2,9 +2,9 @@
 article.media
   figure.media-left
     p.image.is-64x64
-      img(src="/ffxiv_dragon_knight.png")
+      img(:src="user.img")
       p.users
-        | @sunlight
+        | {{user.id}}
   div.media-content
     div.field
       p.control
@@ -19,7 +19,7 @@ article.media
 
 <script>
 export default {
-
+  props: ['user']
 }
 </script>
 
