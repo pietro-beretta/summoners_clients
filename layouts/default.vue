@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="base">
     <nuxt/>
   </div>
 </template>
@@ -14,6 +14,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+.base {
+  display: flex;
+  align-items: center;
+  height: 100vh;
 }
 
 *, *:before, *:after {
