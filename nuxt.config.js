@@ -33,9 +33,11 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    vendor: [
+      'aws-amplify'
+    ]
   },
-
   modules: [
     // nuxt-buefy setting
     'nuxt-buefy',
@@ -45,5 +47,11 @@ module.exports = {
       css: true,
       materialDesignIcons: true
     }],
+
+    // .env
+    '@nuxtjs/dotenv'
+  ],
+  plugins: [
+    { src: '~plugins/amplify-init.js' }
   ]
 }
