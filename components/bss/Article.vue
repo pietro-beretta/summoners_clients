@@ -25,4 +25,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.media-content
+  overflow: hidden
 </style>
